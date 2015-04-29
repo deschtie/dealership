@@ -60,8 +60,15 @@ describe('Vehicle') do
   describe('#worth_buying') do
     it('returns false if the car is not American and less than 15 years old') do
       test_vehicle = Vehicle.new('Ford', 'Taurus', 2000)
-
       expect(test_vehicle.worth_buying?()).to(eq(true))
+    end
+  end
+
+  describe('#id') do
+    it('returns the id of the vehicle') do
+    test_vehicle = Vehicle.new('Ford', 'Taurus', 2000)
+    test_vehicle.save()
+    expect(test_vehicle.id()).to(eq(1))
     end
   end
 
