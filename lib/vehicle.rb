@@ -9,5 +9,13 @@ class Vehicle
   define_method(:make) do
     @make
   end
-  
+
+  define_method(:model) do
+    @model
+  end
+
+  define_method(:year) do
+    @year
+  end
+
 end
