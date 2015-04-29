@@ -1,0 +1,11 @@
+<h1>Vehicles</h1>
+
+<h3>Our list of available vehicles:</h3>
+
+<ul>
+<% @vehicles.each() do |vehicle| %>
+  <li><a href="/vehicles/<%= vehicle.id() %>"> <%= vehicle.model() %></a></li>
+  <% end %>
+</ul>
+
+<p><a href="/">Back</a></p>
